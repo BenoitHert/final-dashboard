@@ -6,10 +6,10 @@ function GoalItem({ goal }) {
   const dispatch = useDispatch()
 
   return (
-    <div className=' bg-gray-200 relative '>
+    <div className='relative bg-slate-200 h-20 flex content-center text-center rounded border-solid border-2 border-black'>
       <div>{new Date(goal.createdAt).toLocaleString('fr-FR')}</div>
-      <h2>{goal.text}</h2>
-      <button onClick={() => dispatch(deleteGoal(goal._id))} className='border-none cursor-pointer absolute top-10 right-15 '>
+      <h2 className='text-xl font-semibold mt-6'>{goal.text}</h2>
+      <button onClick={() => dispatch(deleteGoal(goal._id))} className='border-none cursor-pointer absolute top-1 right-1 '>
         <FaTrash/>
       </button>
     </div>

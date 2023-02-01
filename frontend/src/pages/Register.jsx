@@ -64,61 +64,61 @@ function Register() {
 
   return (
     <>
-      <section className='heading'>
-        <h1>
+      <section className='text-lg font-bold mb-10 pt-20 items-center justify-center flex'>
+        <h1 className='w-48 text-3xl flex text-center justify-between mb-20 absolute items-center pt-10'>
           <FaUser /> S'inscrire
         </h1>
-        <p>Créez un compte et commencez à remplir vos objectifs !</p>
+        <p className='pt-10 '>Créez un compte et commencez à remplir vos objectifs !</p>
       </section>
 
-      <section className='form'>
+      <section className='form w-7/12 m-auto'>
         <form onSubmit={onSubmit}>
-          <div className='form-group'>
+          <div className='form-group w-7/12 m-auto'>
             <input
               type='text'
-              className='form-control'
+              className='form-control w-full p-2 rounded border-solid border-2 border-black mb-10'
               id='name'
               name='name'
               value={name}
-              placeholder='Enter your name'
+              placeholder='Entrez votre nom'
               onChange={onChange}
             />
           </div>
-          <div className='form-group'>
+          <div className='form-group w-7/12 m-auto'>
             <input
               type='email'
-              className='form-control'
+              className='form-control w-full p-2 rounded border-solid border-2 border-black mb-10'
               id='email'
               name='email'
               value={email}
-              placeholder='Enter your email'
+              placeholder='Entrez votre email'
               onChange={onChange}
             />
           </div>
-          <div className='form-group'>
+          <div className='form-group w-7/12 m-auto'>
             <input
               type='password'
-              className='form-control'
+              className='form-control w-full p-2 rounded border-solid border-2 border-black mb-10'
               id='password'
               name='password'
               value={password}
-              placeholder='Enter password'
+              placeholder='Entrez votre mot de passe'
               onChange={onChange}
             />
           </div>
-          <div className='form-group'>
+          <div className='form-group w-7/12 m-auto'>
             <input
               type='password'
-              className='form-control'
+              className='form-control w-full p-2 rounded border-solid border-2 border-black mb-10'
               id='password2'
               name='password2'
               value={password2}
-              placeholder='Confirm password'
+              placeholder='Confirmez votre mot de passe'
               onChange={onChange}
             />
           </div>
-          <div className='form-group'>
-            <button type='submit' className='btn btn-block'>
+          <div className='form-group w-7/12 m-auto text-center bg-black rounded h-10 text-xl font-bold text-white'>
+            <button type='submit' className='btn btn-block border-solid border-2 border-black w-full h-10 rounded'>
               S'inscrire
             </button>
           </div>

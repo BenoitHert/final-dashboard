@@ -15,21 +15,21 @@ function GoalForm() {
   }
 
   return (
-    <section className='w-70 m-auto'>
+    <section className='mr-0 w-4/5 m-auto flex justify-around text-center items-center'>
       <form onSubmit={onSubmit}>
-        <div className='mb-10'>
+        <div className='mb-3 mt-2 text-lg font-bold '>
           <label htmlFor='text'>Nouvel Objectif</label>
           <input
             type='text'
             name='text'
             id='text'
-            className='w-full p-10 mb-10 border-solid rounded'
+            className='w-full p-2 mb-5 mt-2 border-solid border-2 rounded justify-center align-center border-black'
             value={text}
             onChange={(e) => setText(e.target.value)}
           />
         </div>
-        <div className='mb-10'>
-          <button className='bg-blue-600 text-white text-center items-center justify-center flex cursor-pointer font-bold text-lg border-solid rounded p-2 mr-8 hover:scale-110 w-full mb-20' type='submit'>
+        <div className='mb-0 flex justify-center'>
+          <button className='bg-blue-500 text-center items-center justify-center flex cursor-pointer font-bold text-lg border-solid border-2 border-slate-900 rounded p-2 mr-8 hover:scale-110 w-2/3 mb-20' type='submit'>
             Ajouter un Objectif
           </button>
         </div>

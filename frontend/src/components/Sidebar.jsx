@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link, NavLink} from 'react-router-dom';
-import {Si1001Tracklists } from 'react-icons/si';
 import {MdOutlineCancel } from 'react-icons/md'
+import {Si1001Tracklists} from 'react-icons/si'
 // import {TooltipComponent } from '@syncfusion/ej2-react-popups';
 
 import {links} from '../data/dummy';
@@ -16,7 +16,7 @@ const Sidebar = () => {
     <div className='ml-3 h-screen md:overflow-hidden overflow-auto md:hover:overflow-auto pb-10'>
       <> 
       <div className='flex justify-between items-center'> 
-        <Link to="/"
+      <Link to="/"
         className="items-center gap-3 ml-3 mt-4 flex text-xl font-extrabold tracking-tight dark:text-white text-slate-900">
           <Si1001Tracklists/> <span>Backdash</span>
         </Link>

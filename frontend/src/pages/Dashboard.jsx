@@ -37,16 +37,18 @@ function Dashboard() {
 
   return (
     <>
-      <section className='text-xl font-bold mb-0 pt-20 top-50'>
-        <h1>Bienvenue {user && user.name}</h1>
-        <p className='text-slate-400'>Tableau des Objectifs</p>
+    <div className='h-32 w-full pt-20 '>
+      <section className='bg-slate-100 flex justify-around items-center p-3 mr-0 m-auto w-full pl-80 pr-2 '
+      style={{ zIndex: '-500'}}>
+        <h1 className='mb-6 text-2xl font-black absolute'>Bienvenue {user && user.name}</h1>
+        <p className='text-slate-400 text-lg font-bold mt-6'>Tableau des Objectifs</p>
       </section>
 
       <GoalForm />
 
-      <section className='w-70 m-auto'>
+      <section className='mr-0 w-4/5 m-auto flex  justify-around'>
         {goals.length > 0 ? (
-          <div className='grid grid-cols-2'>
+          <div className='grid grid-cols-2 gap-x-14 gap-y-4'>
             {goals.map((goal) => (
               <GoalItem key={goal._id} goal={goal} />
             ))}
@@ -55,6 +57,7 @@ function Dashboard() {
           <h3>Vous n'avez rien à faire !</h3>
         )}
       </section>
+      </div>
     </>
   )
 }

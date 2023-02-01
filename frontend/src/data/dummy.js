@@ -36,7 +36,7 @@ export const links = [
       title: 'Apps',
       links: [
         {
-          name: 'Calendar',
+          name: 'Calendrier',
           icon: <AiOutlineCalendar />,
           linkname: '/calendar',
         },
