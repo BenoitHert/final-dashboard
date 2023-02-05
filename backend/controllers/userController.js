@@ -2,6 +2,7 @@ const jwt = require('jsonwebtoken')
 const bcrypt = require('bcryptjs')
 const asyncHandler = require('express-async-handler')
 const User = require('../models/userModel')
+const Editor = require('../models/editorModel')
 
 // @desc    Register new user
 // @route   POST /api/users
@@ -33,7 +34,13 @@ const registerUser = asyncHandler(async (req, res) => {
     password: hashedPassword,
   })
 
-  if (user) {
+  //Create editor
+  const editor = await Editor.create({
+    user: user.id,
+    text: '',
+  })
+
+  if (user, editor) {
     res.status(201).json({
       _id: user.id,
       name: user.name,

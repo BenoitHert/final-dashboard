@@ -15,25 +15,25 @@ function Dashboard() {
     (state) => state.goals
   )
 
-  useEffect(() => {
-    if (isError) {
-      console.log(message)
-    }
+  // useEffect(() => {
+  //   if (isError) {
+  //     console.log(message)
+  //   }
 
-    if (!user) {
-      navigate('/login')
-    }
+  //   if (!user) {
+  //     navigate('/login')
+  //   }
 
-    dispatch(getGoals())
+  //   dispatch(getGoals())
 
-    return () => {
-      dispatch(reset())
-    }
-  }, [user, navigate, isError, message, dispatch])
+  //   return () => {
+  //     dispatch(reset())
+  //   }
+  // }, [user, navigate, isError, message, dispatch])
 
-  if (isLoading) {
-    return <Spinner />
-  }
+  // if (isLoading) {
+  //   return <Spinner />
+  // }
 
   return (
     <>
