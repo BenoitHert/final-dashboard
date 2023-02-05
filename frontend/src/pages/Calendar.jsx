@@ -11,6 +11,7 @@ function Calendars() {
           onChange={setDate}
           value={date}
           selectRange={true}
+          onClickDay={(value, event) => alert('Clicked day: ', value)}
         />
       </div>
       {date.length > 0 ? (

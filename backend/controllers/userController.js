@@ -82,6 +82,8 @@ const generateToken = (id) => {
   })
 }
 
+
+
 module.exports = {
   registerUser,
   loginUser,

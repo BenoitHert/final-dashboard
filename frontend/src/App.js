@@ -20,7 +20,7 @@ function App() {
   return (
     <>
       <Router>
-        <div className='relative flex dark:bg-main-dark-bg'>
+        <div className='relative flex dark:bg-main-dark-bg '>
 
         {user &&
         <div className='fixed right-4 bottom-4' style={{ zIndex: '1000'}}>
@@ -34,7 +34,7 @@ function App() {
         </div>}
 
           <div className="dark:bg-main-bg  min-h-screen w-full flex-2">
-            <div className='fixed  bg-slate-200 dark:bg-main-dark-bg navbar w-full ' style={{ zIndex: '800'}}>
+            <div className='fixed  bg-slate-200 dark:bg-main-dark-bg navbar w-full max-md:bg-blue-200' style={{ zIndex: '800'}}>
               <Header />
             </div>
           
