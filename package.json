@@ -1,7 +1,7 @@
 {
-  "name": "mern-tutorial",
+  "name": "BackDash",
   "version": "1.0.0",
-  "description": "Goalsetter app for youtube tutorial",
+  "description": "BackDash",
   "main": "server.js",
   "scripts": {
     "start": "node backend/server.js",
