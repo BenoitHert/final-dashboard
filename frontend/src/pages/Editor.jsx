@@ -4,7 +4,7 @@ import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { getEditor, reset, updateEditor} from '../features/editor/editorSlice'
-import Spinner from '../components/Spinner';
+// import Spinner from '../components/Spinner';
 
 function Editor() {
   const navigate = useNavigate()
@@ -14,7 +14,7 @@ function Editor() {
 
 
   const {user} = useSelector((state) => state.auth)
-  // const {editor, isLoading, isError, message } = useSelector(
+  // const { editor, isLoading, isError, message } = useSelector(
   //   (state) => state.editor
   // )
 
