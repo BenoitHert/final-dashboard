@@ -1,5 +1,5 @@
 import request from "supertest"
-import app from '../backend/server'
+import app from '../server'
 import { jest } from '@jest/globals'
 
 const createUser = jest.fn()
